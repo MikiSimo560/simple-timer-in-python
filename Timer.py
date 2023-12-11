@@ -3,7 +3,7 @@ y = int(input("minutes: "))
 x = int(input("seconds: "))
 if x > 60:
     y += int(x/60)
-    x -= 60
+    x -= 60 * int(x/60)
 if y or x > 0:
     while True:
         print(y, ":", x)
